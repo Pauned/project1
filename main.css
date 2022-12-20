@@ -13,7 +13,6 @@ body {
 nav {
   height: 80px;
   width: 100%;
-  background: #0082e6
 }
 
 label.logo {
@@ -113,3 +112,63 @@ a.active, a:hover {
 }
 
 /* Navbar Ends here */
+
+.home{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 0.5)), 
+  url('http://source.unsplash.com/random/2048x1080%27');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.text {
+  display:flex;
+  margin: 0 auto;
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 20px;
+}
+
+button {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  border:  none;
+  border-radius: 1em;
+  outline: none;
+  background-color: #18689e;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: all .5s ease;
+  box-shadow: 5px 10px 10px rgba(0,0,0, .1);
+}
+
+button span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(100%);
+  background-color: #fff;
+  transition: all .5s ease-in-out;
+}
+
+button:hover{
+  color: #fff;
+}
+
+button:hover span{
+  padding: 0;
+  transform: translateY(-100%);
+}
